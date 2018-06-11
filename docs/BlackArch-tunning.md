@@ -8,7 +8,7 @@ This pull request born from the issues related with network specifically getting
 #
 Just lookup for the below needed files at
 #
-https://github.com/4k4xs4pH1r3/blackarch/upload/master/docs
+https://github.com/4k4xs4pH1r3/blackarch/tree/master/docs
 #
 » Make a backup of the existents files and replace as below:
 #
