@@ -105,7 +105,7 @@ reboot
 
 #Verify that all the packages of BlackArch are really installed and Upgraded
 #
-pacman -Syy blackarch --needed --overwrite --noconfirm
+pacman -Syy blackarch --needed --force
 #
 reboot
 
