@@ -109,7 +109,7 @@ pacman -Syy blackarch --needed --force
 #
 reboot
 
-3. Use the combo pamac + octopi + yaourt + pacaur + pacman with the respective notifiers and use as default deepin as your wm.. This 'll made You happy!
+3. Use the combo pamac + octopi + yaourt + pacaur + pacman + pamac-aur + aurman + pikaur +  kalu +with the respective notifiers and use as default deepin as your wm.. This 'll made You happy!
 #
 pacman -S pacaur
 #
