@@ -1,12 +1,25 @@
-This guide is oriented for tune BlackArch after you installed, don't forget create the secondary account during the installation with administrative rights.
-
-This pull request born from the issues related with network specifically getting up the interfaces; dhcp; wicd; d-bus & NetworkManager. The rest is value added...
+This guide is oriented for tune Install BlackArch just if you have Manjaro, Archlinux, Antergos, or arch derivated distro execute:
 #
-1. The key is: Install from scratch 
+su
 #
-2. The perfect cocktail is play with the repos: blackarch + antergos + arch with pr1v8 DNS's from Parrot Security OS, instead of use your ISP and google, with Round Robin feature.
+cd Downloads 
 #
-Just lookup for the below needed files at
+whet http://blackarch.org.strap.sh
+#
+chmod +x strap.sh
+#
+./strap.sh
+#
+Reply the questions of the wizard as per you pefrerence or needs.
+$
+Don't forget create the secondary account during the installation with administrative rights, don't work with root  as your main account.
+#
+Now if you are installing from the scracth usin the original ISO of Blackarch, follow this steps:
+#
+#
+1. The perfect cocktail is play with the repos: blackarch + antergos + arch with pr1v8 DNS's from Parrot Security OS, instead of use your ISP and google, with Round Robin feature.
+#
+Just lookup for installedthe below needed files at
 #
 https://github.com/4k4xs4pH1r3/blackarch/tree/master/docs
 #
@@ -31,10 +44,10 @@ trustdb.gpg         (replace at directory: /etc/pacman.d/gnupg/)
 
 
 #
-So let's start, in my case I have some issues related with network specifically getting up the interfaces; dhcp; wicd; d-bus / NetworkManager. Once I finished the installation of this impressive distro. 
+So the next step, is tune network interfaces; dhcp; wicd; d-bus & NetworkManager. . 
 
 #
-## For fix that issues execute this commads from your terminal as root
+## For that  execute this commads from your terminal as root
 
 #
 rm -r /var/run/wicd/wicd.pid
@@ -54,8 +67,6 @@ lspci | grep -i net
 iwconfig
 #
 ip link
-
-#Strange or not, idk, not auto created a profile network during the installation (is possible that my machine have a fail related with hw due to the model is from 2011), inclusive having the nic connected before to start the installation, in this case we need to do that manually following this steps:
 
 #
 cd /etc/netctl 
@@ -97,7 +108,7 @@ dhcpcd enp19s0
 dhcpcd wlp18s0b1
 
 #
-Now 'll upgrade your system and add deepin & gnome as your wm's
+Now upgrade your system and add deepin & gnome as your wm's
 #
 pacman -Syuu
 #
@@ -148,5 +159,14 @@ reboot
 pacman -S telegram-desktop
 #
 #
+Done finished the installation of this impressive distro. 
 #
-From this point in advance your mind need be inspired...
+#
+#
+#
+#
+#
+
+## From this point in advance your mind need be inspired...
+
+
