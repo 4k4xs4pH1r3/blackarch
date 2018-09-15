@@ -10,14 +10,16 @@ chmod +x strap.sh
 #
 ./strap.sh
 #
-Reply the questions of the wizard as per you pefrerence or needs.
+Reply the questions of the wizard as per you pefrerence or needs, take a cofee and enjoy, the time that take the installation depends of, your hardware and bandwith.
 $
-Don't forget create the secondary account during the installation with administrative rights, don't work with root  as your main account.
+
 #
-Now if you are installing from the scracth usin the original ISO of Blackarch, follow this steps:
+Now if you are installing from the scratch usin the original ISO of Blackarch, follow this steps:
 #
 #
-1. The perfect cocktail is play with the repos: blackarch + antergos + arch with pr1v8 DNS's from Parrot Security OS, instead of use your ISP and google, with Round Robin feature.
+1. Don't forget create the secondary account during the installation with administrative rights, don't work with root  as your main account.
+#
+The perfect cocktail is play with the repos: blackarch + antergos + arch with pr1v8 DNS's from Parrot Security OS, instead of use your ISP and google, with Round Robin feature.
 #
 Just lookup for installedthe below needed files at
 #
@@ -50,6 +52,8 @@ So the next step, is tune network interfaces; dhcp; wicd; d-bus & NetworkManager
 ## For that  execute this commads from your terminal as root
 
 #
+su
+#
 rm -r /var/run/wicd/wicd.pid
 #
 systemctl enable wicd.service
@@ -67,28 +71,28 @@ lspci | grep -i net
 iwconfig
 #
 ip link
-
+#
 #
 cd /etc/netctl 
 #
 cp examples/ethernet-static my-network
-
+#
 #
 nano my-network
-
+#
 And change the Interface from eth0 to enp19s0 (or whatever your adapter is in ip link).
 Finally, I enabled it to use that profile on startup with
 #
 netctl enable my-network
-
+#
 #
 In my case my system reported the below for ethernet: enp19s0, and for wireless: wlp18s0b1
-
+#
 #
 ip link set enp19s0 up
 #
 ip link set wlp18s0b1 up
-
+#
 #
 Just in case that from blackarch wm you can't conenct to internet with the both options embedded in this distro, go to your terminal and execute:
 #
@@ -99,27 +103,27 @@ systemctl enable networkmanager.service
 systemctl start networkmanager.service
 #
 systemctl status networkmanager.service
-
+#
 #
 Ok, is time to up both interfaces, for that execute this sequence
 #
 dhcpcd enp19s0
 #
 dhcpcd wlp18s0b1
-
+#
 #
 Now upgrade your system and add deepin & gnome as your wm's
 #
 pacman -Syuu
 #
 reboot
-
+#
 #Verify that all the packages of BlackArch are really installed and Upgraded
 #
 pacman -Syy blackarch --needed --force
 #
 reboot
-
+#
 3. Use the combo pamac + octopi + yaourt + pacaur + pacman + pamac-aur + aurman + pikaur +  kalu +with the respective notifiers and use as default deepin as your wm.. This 'll made You happy!
 #
 pacman -S pacaur
