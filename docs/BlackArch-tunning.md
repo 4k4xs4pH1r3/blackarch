@@ -4,7 +4,7 @@ su
 #
 cd Downloads 
 #
-whet http://blackarch.org.strap.sh
+whet http://blackarch.org/strap.sh
 #
 chmod +x strap.sh
 #
