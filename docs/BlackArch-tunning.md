@@ -1,5 +1,9 @@
-This guide is oriented for tune Install BlackArch just if you have Manjaro, Archlinux, Antergos, or arch derivated distro execute:
+## Case 1. This guide is oriented for add to an existent installation of Manjaro, Archlinux, Antergos, or arch derivated: BlackArch: 
 #
+Reply the questions of the wizard as per you pefrerence or needs, take a cofee and enjoy, the time that take the installation depends of, your hardware and bandwith.
+$
+#
+
 su
 #
 cd Downloads 
@@ -10,14 +14,12 @@ chmod +x strap.sh
 #
 ./strap.sh
 #
-Reply the questions of the wizard as per you pefrerence or needs, take a cofee and enjoy, the time that take the installation depends of, your hardware and bandwith.
-$
-
-#
-Now if you are installing from the scratch usin the original ISO of Blackarch, follow this steps:
 #
 #
-1. Don't forget create the secondary account during the installation with administrative rights, don't work with root  as your main account.
+##  Case 2:  Installing from the scratch usin the original ISO of Blackarch, replying to the wizard questions and once finish the installation, follow this steps:
+#
+#
+Don't forget create the secondary account during the installation with administrative rights, don't work with root  as your main account.
 #
 The perfect cocktail is play with the repos: blackarch + antergos + arch with pr1v8 DNS's from Parrot Security OS, instead of use your ISP and google, with Round Robin feature.
 #
@@ -43,11 +45,11 @@ gpg.conf            (replace at directory: /etc/pacman.d/gnupg/)
 pubring.gpg         (replace at directory: /etc/pacman.d/gnupg/)
 # 
 trustdb.gpg         (replace at directory: /etc/pacman.d/gnupg/)
-
-
+#
+#
 #
 So the next step, is tune network interfaces; dhcp; wicd; d-bus & NetworkManager. . 
-
+#
 #
 ## For that  execute this commads from your terminal as root
 
@@ -124,21 +126,13 @@ pacman -Syy blackarch --needed --force
 #
 reboot
 #
-3. Use the combo pamac + octopi + yaourt + pacaur + pacman + pamac-aur + aurman + pikaur +  kalu +with the respective notifiers and use as default deepin as your wm.. This 'll made You happy!
+3. Use the combo pacman with the respective notifiers and use as default deepin as your wm... This 'll made You happy!
 #
-pacman -S pacaur
+Letś install the components
 #
-pacman -S yaourt
+pacman -S pacaur yaourt octopi pamac xorg xorg-server deepin deepin-extra
 #
-pacman -S octopi
-#
-pacman -S pamac
-#
-pacman -S xorg xorg-server
-#
-pacman -S deepin
-#
-pacman -S deepin-extra
+pacaur -S pikaur kalu pamac
 #
 systemctl start lightdm.service
 #
@@ -157,11 +151,27 @@ systemctl status gdm.service
 reboot
 
 #Choose deepin as your window manager in the left down corner from the list and login with the 2nd account that you created (no with root)
+#
+Reply the questions of the wizard as per you pefrerence or needs, take a cofee and enjoy, the time that take the installation depends of, your hardware and bandwith.
+$
+#
+#
+su
+#
+cd Downloads 
+#
+whet http://blackarch.org/strap.sh
+#
+chmod +x strap.sh
+#
+./strap.sh
 
+#
 #Now install telegram
 #
 pacman -S telegram-desktop
 #
+reboot
 #
 Done finished the installation of this impressive distro. 
 #
