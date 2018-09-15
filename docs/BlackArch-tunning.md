@@ -34,7 +34,7 @@ trustdb.gpg         (replace at directory: /etc/pacman.d/gnupg/)
 So let's start, in my case I have some issues related with network specifically getting up the interfaces; dhcp; wicd; d-bus / NetworkManager. Once I finished the installation of this impressive distro. 
 
 #
-For fix that issues execute this commads from your terminal as root
+## For fix that issues execute this commads from your terminal as root
 
 #
 rm -r /var/run/wicd/wicd.pid
