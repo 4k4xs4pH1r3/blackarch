@@ -15,6 +15,21 @@ chmod +x strap.sh
 ./strap.sh
 #
 #
+Install all the packages of BlackArch
+#
+pacman -Syy blackarch --needed --force
+#
+reboot
+#
+pacman -Syyu
+#
+pacaur -Syyu
+#
+reboot
+#
+enjoy
+#
+#
 #
 ##  Case 2:  Installing from the scratch usin the original ISO of Blackarch, replying to the wizard questions and once finish the installation, follow this steps:
 #
@@ -165,15 +180,24 @@ whet http://blackarch.org/strap.sh
 chmod +x strap.sh
 #
 ./strap.sh
-
+#
+pacman -Syy blackarch --needed --force
+#
+reboot
+#
+pacman -Syyu
+#
+pacaur -Syyu
+#
+reboot
+#
+Done finished the installation of this impressive distro. enjoy
 #
 #Now install telegram
 #
 pacman -S telegram-desktop
 #
-reboot
 #
-Done finished the installation of this impressive distro. 
 #
 #
 #
