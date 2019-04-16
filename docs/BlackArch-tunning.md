@@ -8,7 +8,7 @@ su
 #
 cd Downloads 
 #
-whet http://blackarch.org/strap.sh
+wget http://blackarch.org/strap.sh
 #
 chmod +x strap.sh
 #
