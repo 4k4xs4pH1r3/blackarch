@@ -26,7 +26,9 @@ enjoy
 #
 #
 #
-##  Case 2:  Installing from the scratch usin the original ISO of Blackarch, replying to the wizard questions and once finish the installation, follow this steps:
+##  Case 2:  Installing from scratch using original ISO of Blackarch
+
+Replying to the wizard questions and once finish the installation, follow this steps:
 #
 #
 Don't forget create the secondary account during the installation with administrative rights, don't work with root  as your main account.
@@ -168,21 +170,13 @@ $
 #
 su
 #
-cd Downloads 
-#
-whet http://blackarch.org/strap.sh
-#
-chmod +x strap.sh
-#
-./strap.sh
+cd Downloads && wget http://blackarch.org/strap.sh && chmod +x strap.sh && ./strap.sh
 #
 pacman -Syy blackarch --needed --force
 #
 reboot
 #
-pacman -Syyu
-#
-pacaur -Syyu
+pacman -Syyu && pacaur -Syyu
 #
 reboot
 #
@@ -200,6 +194,6 @@ pacman -S telegram-desktop
 #
 #
 
-## From this point in advance your mind need be inspired...
+## From this point in advance your mind need to be inspired...
 
 
