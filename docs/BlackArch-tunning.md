@@ -1,18 +1,15 @@
-## Case 1. This guide is oriented for add to an existent installation of Manjaro, Archlinux, Antergos, or arch derivated: BlackArch: 
+## Case 1. This guide is oriented to install BlackArch
+
+Inside in an existent installation of Manjaro, Archlinux or arch derivated:
+
 #
 Reply the questions of the wizard as per you pefrerence or needs, take a cofee and enjoy, the time that take the installation depends of, your hardware and bandwith.
 $
 #
-
+#
 su
 #
-cd Downloads 
-#
-wget http://blackarch.org/strap.sh
-#
-chmod +x strap.sh
-#
-./strap.sh
+cd Downloads && wget http://blackarch.org/strap.sh && chmod +x strap.sh && ./strap.sh
 #
 #
 Install all the packages of BlackArch
@@ -21,9 +18,7 @@ pacman -Syy blackarch --needed --force
 #
 reboot
 #
-pacman -Syyu
-#
-pacaur -Syyu
+pacman -Syyu && pacaur -Syyu
 #
 reboot
 #
