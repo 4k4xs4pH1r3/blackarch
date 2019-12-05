@@ -16,10 +16,9 @@ BlackArch Linux only takes a moment to setup.
 
 There are three ways to go:
 
-  1. [Install on an existing Arch machine](https://www.blackarch.org/downloads.html#install-repo).
-  2. Use the [live ISO](http://blackarch.org/downloads.html).
-  3. The ISOs come with an installer (`blackarch-install`). You can use the
-  installer to install BlackArch to your hard disk.
+  1. Install [Manjaro Arch machine](https://manjaro.org/download/official/gnome/).
+  2. Install [BlackArch](https://github.com/4k4xs4pH1r3/blackarch/blob/master/docs/BlackArch-tunning.md).
+  3. Enjoy
 
 ## Get Involved
 
