@@ -18,7 +18,13 @@ Install all the packages of BlackArch
 #
     reboot
 #
-    pacman -Syyu && pacaur -Syyu
+    su
+
+    pacman -Syyu 
+    
+    exit
+    
+    pacaur -Syyu
 #
     reboot
 #
@@ -179,7 +185,13 @@ $
 #
     reboot
 #
-    pacman -Syyu && pacaur -Syyu
+    su
+    
+    pacman -Syyu
+    
+    exit
+
+    pacaur -Syyu
 #
     reboot
 #
