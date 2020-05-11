@@ -14,7 +14,7 @@ $
 #
 Install all the packages of BlackArch
 #
-    pacman -Syy blackarch --needed --force
+    pacman -Syy blackarch --needed
 #
     reboot
 #
