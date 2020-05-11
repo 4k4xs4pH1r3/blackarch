@@ -14,7 +14,7 @@ $
 #
 Install all the packages of BlackArch
 #
-    pacman -Syy blackarch --needed
+    sudo pacman -Syyu --needed blackarch --overwrite='*'
 #
     reboot
 #
