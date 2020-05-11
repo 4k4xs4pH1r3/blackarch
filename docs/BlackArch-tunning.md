@@ -19,9 +19,9 @@ Install all the packages of BlackArch
     reboot
 #
     sudo -i && pacman -Syyu 
-    
+#    
     exit
-    
+#    
     pacaur -Syyu
 #
     reboot
