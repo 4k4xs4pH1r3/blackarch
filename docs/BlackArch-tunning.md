@@ -7,7 +7,7 @@ Reply the questions of the wizard as per you pefrerence or needs, take a cofee a
 $
 #
 #
-    sudo - i
+    sudo -i
 #
     mkdir Downloads && cd Downloads && wget http://blackarch.org/strap.sh && chmod +x strap.sh && ./strap.sh
 #
