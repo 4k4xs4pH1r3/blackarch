@@ -1,9 +1,9 @@
 ## Case 1. This guide is oriented to install BlackArch
 
-Inside in an existent installation of Manjaro, Archlinux or arch distro derivated:
+Inside in an existent installation of Manjaro, Archlinux or arch derivated distro:
 
 #
-Reply the questions of the wizard as per you pefrerence or needs, take a cofee and enjoy, the time that take the installation depends of, your hardware and bandwith.
+Reply the questions of the wizard as per you pefrerence or needs, take a cofee and enjoy, the time that take the installation depends of your hardware and bandwith.
 $
 #
 #
