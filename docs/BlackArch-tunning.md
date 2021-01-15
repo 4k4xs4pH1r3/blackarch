@@ -44,7 +44,7 @@ Don't forget create the secondary account during the installation with administr
 #
 The perfect cocktail is play with the repos: blackarch + manjaro or arch distro based with pr1v8 DNS's from Parrot Security OS, instead of use your ISP and google, with Round Robin feature.
 #
-Just lookup for installedthe below needed files at
+Just lookup for needed files at
 #
 https://github.com/4k4xs4pH1r3/blackarch/tree/master/docs
 #
@@ -72,7 +72,7 @@ trustdb.gpg         (replace at directory: /etc/pacman.d/gnupg/)
 So the next step, is tune network interfaces; dhcp; wicd; d-bus & NetworkManager. . 
 #
 #
-## For that  execute this commads from your terminal as root
+## For that execute this commads from your terminal as root
 
 #
     su
@@ -171,7 +171,7 @@ Letś install the components
 #
     reboot
 
-#Choose deepin as your window manager in the left down corner from the list and login with the 2nd account that you created (no with root)
+#Choose gnome or deepin as your window manager in the left down corner from the list and login with the 2nd account that you created (no with root)
 #
 Reply the questions of the wizard as per you pefrerence or needs, take a cofee and enjoy, the time that take the installation depends of, your hardware and bandwith.
 $
@@ -179,7 +179,7 @@ $
 #
     su
 #
-    cd Downloads && wget http://blackarch.org/strap.sh && chmod +x strap.sh && ./strap.sh
+    cd Downloads && wget https://blackarch.org/strap.sh && chmod +x strap.sh && ./strap.sh
 #
     pacman -Syy blackarch --needed --force
 #
