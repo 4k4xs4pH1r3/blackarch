@@ -9,7 +9,7 @@ $
 #
     sudo -i
 #
-    mkdir Downloads && cd Downloads && wget http://blackarch.org/strap.sh && chmod +x strap.sh && ./strap.sh
+    mkdir Downloads && cd Downloads && wget https://blackarch.org/strap.sh && chmod +x strap.sh && ./strap.sh
 #
 #
 Install all the packages of BlackArch
